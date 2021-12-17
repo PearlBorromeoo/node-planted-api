@@ -117,4 +117,26 @@ router.get("/followings/:userID", async(req,res)=>{
     }
 })
 
+// Get All users 
+// router.get("/all/get/IDs", async(req,res)=>{
+//     try {
+//         const userIDs = await User.find().select('_id')
+//         // const user = await User.findById(req.params.userID);
+//         // const followings = await Promise.all(
+//         //     user.following.map(followingID=>{
+//         //         return User.findById(followingID)
+//         //     })
+//         // );
+//         // let followingList = [];
+//         // followings.map((following)=>{
+//         //     const {_id, username, profilePicture} = following;
+//         //     followingList.push({_id, username, profilePicture});
+//         // });
+//         res.status(200).json(userIDs);
+//     } catch (err) {
+//         res.status(500).json(err);
+//     }
+// })
+
+
 module.exports = router;

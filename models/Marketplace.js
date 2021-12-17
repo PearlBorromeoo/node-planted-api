@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const PostSchema = new mongoose.Schema({
+const MarketplaceSchema = new mongoose.Schema({
     userID: {
         type:String,
         required:true
@@ -20,4 +20,4 @@ const PostSchema = new mongoose.Schema({
     {timestamps:true}
 );
 
-module.exports = mongoose.model("Post", PostSchema);
+module.exports = mongoose.model("Marketplace", MarketplaceSchema);
